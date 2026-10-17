@@ -1,0 +1,53 @@
+models:
+  - name: products_t
+    columns:
+      - name: product_id
+        data_tests:
+          - unique 
+          - not_null
+      - name: price
+        data_tests:
+          - greaterThan
+  - name: orders_t
+    columns:
+      - name: order_id
+        data_tests:
+          - unique 
+          - not_null
+
+  - name: customers_t
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique 
+          - not_null
+      - name: email
+        data_tests:
+          - not_null
+  - name: order_items_t
+    columns:
+      - name: order_item_id
+        data_tests:
+          - unique 
+          - not_null
+      - name: quantity
+        data_tests:
+          - greaterThan
+  - name: employees_t
+    columns:
+      - name: employee_id
+        data_tests:
+          - unique 
+          - not_null
+      - name: email
+        data_tests:
+          - not_null
+  - name: stores_t
+    columns:
+      - name: store_id
+        data_tests:
+          - unique 
+          - not_null
+      - name: city
+        data_tests:
+          - not_null

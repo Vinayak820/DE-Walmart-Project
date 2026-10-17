@@ -1,7 +1,5 @@
-dbt_project.yml
 target/
 dbt_packages/
 logs/
 .env
 profiles.yml
-*.yml
